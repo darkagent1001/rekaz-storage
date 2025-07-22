@@ -1,0 +1,74 @@
+svg {
+    @apply inline-block;
+}
+
+button,
+.button {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-3 py-2 font-medium no-underline transition-all [&_svg]:size-3.5;
+}
+
+button.primary,
+.button.primary {
+    @apply bg-gray-950 text-white hover:bg-gray-800;
+}
+
+button.secondary,
+.button.secondary {
+    @apply border border-gray-300 text-gray-600 hover:bg-gray-200;
+}
+
+.form-input {
+    @apply w-full rounded-lg border border-gray-300 bg-white px-2.5 py-1.5 ring-2 ring-transparent transition-all outline-none ring-inset focus:ring-gray-950;
+}
+
+.file {
+    @apply space-y-4 rounded-lg p-3 text-center shadow-xs transition-all hover:bg-gray-100;
+}
+
+.file > svg {
+    @apply mx-auto size-6 text-black;
+}
+
+.file-name {
+    @apply mb-1 line-clamp-1 text-sm;
+}
+
+.file-size {
+    @apply line-clamp-1 text-xs text-gray-600;
+}
+
+.auth-form {
+    @apply mx-auto w-full text-center md:w-[28.125rem];
+}
+
+.form-title {
+    @apply text-center text-3xl font-medium;
+}
+
+.form-text {
+    @apply mt-3 mb-8 text-gray-600;
+}
+
+.form-content {
+    @apply grid gap-6;
+}
+
+.dropdown {
+    @apply relative;
+}
+
+.dropdown-content {
+    @apply invisible absolute top-14 grid w-full gap-1 rounded-lg p-2 opacity-0 shadow-md transition-all;
+}
+
+.dropdown-content.show {
+    @apply visible opacity-100;
+}
+
+.dropdown-item {
+    @apply rounded-md px-2 py-1.5 text-sm transition-all hover:bg-gray-100 [&_svg]:size-3.5;
+}
+
+.container {
+    @apply mx-auto w-full md:w-4/5;
+}
